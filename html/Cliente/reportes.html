@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="i
+    nitial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ExpoChick</title> 
+    <link rel="shorcut icon" href="../../img/faviExpo.png">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/formValidation.min.css">
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/sweetalert.css">
+    <link rel="stylesheet" href="../../css/usercliente.css">
+    <!-- <link rel="stylesheet" href="../../css/registro.css"> -->
+
+
+    <link href="https://file.myfontastic.com/452E3H23KbcqCfupTCoTmJ/icons.css" rel="stylesheet">
+
+
+</head>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<body>
+
+<style>
+.table a > i {
+    text-decoration: none;
+    list-style: none;
+    color: #134F65;
+    font-size: 1.2em;
+}
+.table button{
+    align-self: center;
+    text-align: center;
+    background-color: #C6F4E1;
+}
+.table tr{
+    color: #134F65;
+    font-size: 15px;
+}
+</style>
+
+    <header>
+        <a href="#" id="ocultar-aside"><i></i></a>
+        <a href="../../index.html"><img src="../../img/logo.png" width="60" height="50" class="logop"></a>
+    </header>
+
+    <main class="cliente">
+
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="cliente.html">Inicio</a> <span class="divider">/</span>
+                    </li>
+                    <li class="active">Reportes
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <table class="table table-hover table-condensed table-bordered">
+                        <thead bgcolor="#7FF5C4" >
+                            <tr>
+                                <th>
+                                    Código Pedido
+                                </th>
+                                <th>
+                                    Fecha
+                                </th>
+                                <th>
+                                    Producto
+                                </th>
+                                <td>
+                                    Proceso
+                                </td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    109202
+                                </td>
+                                <td>
+                                    14/09/2016
+                                </td>
+                                <td>
+                                    Granadilla
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                    <button><i class="icon-star"></i>Ver</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    109203
+                                </td>
+                                <td>
+                                    29/09/2016
+                                </td>
+                                <td>
+                                    Manzana
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    <button><i class="icon-star"></i>Ver</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    109204
+                                </td>
+                                <td>
+                                    03/10/2016
+                                </td>
+                                <td>
+                                    Manzana
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    <button><i class="icon-star"></i>Ver</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    109205
+                                </td>
+                                <td>
+                                    03/10/2016
+                                </td>
+                                <td>
+                                    Pera
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    <button><i class="icon-star"></i>Ver</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </main>
+    <aside>
+          <div class="foto-perfil">
+            <img src="../../img/usuario_cliente.png" class="perfil" >
+        </div>
+        <!-- <div class="sesion">
+            <p><span class=""></span></p>
+        </div> -->
+        <div class="menu-aside">
+            <a href="cliente.html"><i></i> Inicio </a>
+            <a href="cliente-catalogo.html"><i></i> Catálogo <span class="arrow"></span>
+            <a href="#"><i></i> Reportes <span class="arrow"></span></a>
+            <!-- <a href="#"><i class="fa fa-car fa-lg"></i> Productos <span class="arrow"></span></a> -->
+            <!-- <a href="#"><i class="fa fa-car fa-lg"></i> Documentación <span class="arrow"></span></a> -->
+            
+        </div>
+    </aside>
+ 
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#ocultar-aside').on('click', function(){
+                $('aside').toggleClass('aside, aside-toggle');
+                $('main').toggleClass('main, main-toggle');
+            });
+        });
+    </script>
+ 
+</body>
+</html>

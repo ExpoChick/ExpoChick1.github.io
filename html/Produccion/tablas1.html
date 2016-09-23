@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>ExpoChick</title>
+    <link rel="stylesheet" href="../../css/user.css">
+    <link rel="shorcut icon" href="../../img/faviExpo.png">
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/sweetalert.css">
+    
+    <link rel="stylesheet" href="../../css/stilografito.css">
+    <link rel="stylesheet" href="../../css/export.css">
+
+
+</head>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> -->
+<body>
+    <header>
+        <a href="#" id="ocultar-aside"><i></i></a>
+        <a href="indexespañol.html"><img src="img/logo.png" width="60" height="50" class="logop"></a>
+        
+        
+    </header>
+    <main>
+        <iframe frameborder='0'  width='240' height='210'  title='%Title%' src='catalogo.fhprj' type='text/html' allowfullscreen='true' scrolling='no' marginwidth='0' marginheight='0'></iframe>    
+
+    </main>
+    <aside>
+    <!--aquí va todo de la barra lateral-->
+        <div class="foto-perfil">
+            <img src="img/usuario_gerente.png" class="perfil" >
+        </div>
+        <div class="sesion">
+            <p><span class=""></span></p>
+        </div>
+        <div class="menu-aside">
+            <a href="gerente.html"><i class="fa fa-home"></i> Inicio </a>
+            <a href="img/error500.jpg"><i class="fa fa-plane"></i> Exportación <span class="arrow"></span>
+            <a href="gerente-registrarCliente.html"><i class="fa fa-users fa-lg"></i> Clientes <span class="arrow"></span></a>
+            <a href="gerente-registrarFruta.html"><i class="fa fa-car fa-lg"></i> Productos <span class="arrow"></span></a>
+            <a href="https://drive.google.com/open?id=0BzPzycZ3wohKVnFkNU54Tm5JUG8"><i class="fa fa-car fa-lg"></i> Documentación <span class="arrow"></span></a>
+            
+        </div>
+    </aside>
+
+ 
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#ocultar-aside').on('click', function(){
+                $('aside').toggleClass('aside, aside-toggle');
+                $('main').toggleClass('main, main-toggle');
+            });
+        });
+    </script>
+    <script>
+        swal("Bienvenid@")
+    </script>
+    
+    
+</body>
+</html>

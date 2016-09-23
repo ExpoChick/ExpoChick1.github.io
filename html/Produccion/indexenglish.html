@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ExpoChick</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="shorcut icon" href="img/faviExpo.png">
+
+ 
+<!-- <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+</head> 
+<body> 
+	
+	<header>
+		<img src="img/banner.png" alt="">
+		<nav id="navbar" class="navbar navbar-default navbar-fixed-top text-center">
+			<a href="#nosotros"><li>Company</li></a>
+			<a href="#productos"><li>Products</li></a>	
+			<a href="http://www.freshplaza.com/index.asp"><li>News</li></a>
+			<!-- <a href="#noticias"><li>News</li></a> -->
+			<a href="#contacto"><li>Contact</li></a>
+			<a data-toggle="modal" href="#myModal"><li>Log in</li></a>
+		</nav>
+		<div class="container">
+			<div class="row texth">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 info1">
+					<h3>In order to convert the world of fruit and food derived an inexhaustible source of daily energy, respecting the environment and providing a friendly environment with nature, and the health of mankind.</h3>
+				</div>
+				<div class="col-md-4 info2">
+					<p>Agribusiness> Agricola</p>
+					<img src="img/agricola.png" alt="">
+					<p>News</p>
+					<a target="_blank" href="http://www.freshplaza.com/index.asp"><img src="img/news.png" alt=""></a>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</header>
+	<br><br>
+	<section id="nosotros">
+		<br>
+		<div class="container">
+			<h1>Company</h1><br>	
+			<div class="row">
+				<div class="col-md-7">
+					<h2><b>Quality exotic fruit direct from colombian farmers.</b><br><br>
+					Is a leading colombian company that offers a comprehensive range of fruits including Physalis.<br>
+					Our company us located in Bogota, southamerica. Focused on quality service and safe goods and competitive price.<br>We are specialized in fruitgrowing and we use the lastest techniques in production. We are applying the GLOBAL GAP protocolo giving fruits of first quality for the benefit of our customers.<br>We are specialized in fruitgrowing and we use the lastest techniques in production. We are applying the GLOBAL GAP protocolo giving fruits of first quality for the benefit of our customers.  <br> <b>Frutireyes</b> can supply you with exotic fruits responding to the most demanding qualitative standards </h2>
+					<br><br><br>
+				</div>
+				<div class="col-md-5">
+					<img src="img/fruta1ing.png" align="center" >
+				</div>
+				<br><br><br>
+			</div>
+		</div>
+	</section>
+	<section id="productos">
+		<div class="container">
+			<h1>Products</h1>
+			<div class="row text-center">
+				<div class="col-md-6">
+	                <h4>Pasion Fruit</h4>
+	                <img src="img/Granadilla.jpg" alt="">
+	                <h4>Apple</h4>
+	                <img src="img/manzana.jpg" alt="">
+	            </div>
+	            <div class="col-md-6">
+	                <h4>Peach</h4>
+	                <img src="img/Durazno.jpg" alt="">
+	                <h4>Pear</h4>
+	                <img src="img/Pera.jpg" alt="">
+	            </div>
+			</div>
+			<br>
+		</div>
+	</section>
+	<!-- <section id="noticias">
+	<br>
+		<div class="container">
+			<h1>News</h1>
+		</div>
+	</section> -->
+	<section id="contacto">
+			<br>
+		<div class="container">
+			<h1>Contact</h1>
+			<img src="img/contactoing.png" class="text-center">
+			<br><br><br><br><br>
+	    </div>
+    <!-- <script src="../jv/footer.js"></script> -->
+	</section>
+
+	<!-- modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+    	<div class="modal-dialog">
+    
+      <!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Log In</h4>
+				</div>
+				<div class="modal-body">
+					<form id="inicioSesion" method="post" class="form-horizontal">
+			<div class="form-group">
+				<label class="col-xs-3 control-label">User</label>
+				<div class="col-xs-5">
+					<input type="text" class="form-control" name="username" placeholder="Username" />
+				</div>
+			</div>
+
+
+			<div class="form-group">
+				<label class="col-xs-3 control-label">Email</label>
+				<div class="col-xs-5">
+					<input type="text" class="form-control" name="username" placeholder="email" />
+				</div>
+			</div>
+
+
+			<div class="form-group">
+				<label class="col-xs-3 control-label">Password</label>
+				<div class="col-xs-5">
+					<input type="password" class="form-control" name="password" placeholder="Password" />
+				</div>
+				<div class="col-xs-3">
+					<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-target="#forgotPasswordModal">Forgot your password?</button>
+				</div>
+			</div>
+
+
+			<!-- The modal contains the email field -->
+			<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h5 class="modal-title">Forgot your password?</h5>
+						</div>
+
+						<div class="modal-body">
+							<div class="form-group">
+								<label class="col-xs-3 control-label">Email</label>
+								<div class="col-xs-6">
+									<input type="text" class="form-control" name="email" />
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-xs-5 col-xs-offset-3">
+									<button type="submit" class="btn btn-primary">Recover</button>
+									<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+				</div>
+				<div class="modal-footer">
+					<div class="form-group">
+						<div class="col-xs-5 col-xs-offset-3">
+							<button type="submit" class="btn btn-default">
+		                     Log In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- Plugin para dar mas efecto a nuestro scroll -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<!-- Importamos nuestro script -->
+	<script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/formValidation.min.js"></script>
+	<script src="js/bootstrap_validation.min.js"></script>
+		
+	<!-- Script formulario Ingreso -->
+	<script>
+			$(document).ready(function() {
+				$('#inicioSesion').formValidation({
+					framework: 'bootstrap',
+					excluded: ':disabled',
+					icon: {
+						valid: 'glyphicon glyphicon-ok',
+						invalid: 'glyphicon glyphicon-remove',
+						validating: 'glyphicon glyphicon-refresh'
+					},
+					fields: {
+						username: {
+							validators: {
+								notEmpty: {
+									message: 'ingresar.'
+								}
+							}
+						},
+						password: {
+							validators: {
+								notEmpty: {
+									message: 'ingrese contraseña .'
+								}
+							}
+						},
+						email: {
+							/* Initially, the validators of this field are disabled */
+							enabled: false,
+							validators: {
+								notEmpty: {
+									message: 'ingrese Su correo electrónico'
+								},
+								emailAddress: {
+									message: 'Introduzca una dirección de correo .'
+								}
+							}
+						}
+					}
+				});
+
+				$('#forgotPasswordModal')
+				.on('shown.bs.modal', function() {
+					$('#inicioSesion')
+					.formValidation('enableFieldValidators', 'username', false)
+					.formValidation('enableFieldValidators', 'password', false)
+					.formValidation('enableFieldValidators', 'email', true)
+					.formValidation('resetField', 'email');
+				})
+				.on('hidden.bs.modal', function() {
+					$('#inicioSesion')
+					.formValidation('enableFieldValidators', 'username', true)
+					.formValidation('enableFieldValidators', 'password', true)
+					.formValidation('enableFieldValidators', 'email', false);
+				});
+			});
+		</script>
+
+</body>
+</html>

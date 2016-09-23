@@ -1,0 +1,58 @@
+/*registrar cliente*/
+.reg-cliente div{ 
+  font-family: 'Bree Serif', serif;
+  font-size: 30px;
+}
+.reg-cliente input{
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+}
+.reg-cliente label{
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+}
+/*.reg-cliente input-field col {
+ font-family: 'Bree Serif', serif;
+  font-size: 10px;
+}*/
+
+/*registrar fruta*/
+.reg-fruta #crearU{
+  font-family: 'Bree Serif', serif;
+  font-size: 23px;
+  
+}
+.formcontrol{
+  font-family: 'Bree Serif', serif;
+  font-size: 3em;  
+}
+#crearU .has-error .control-label,
+#crearU .has-error .help-block,
+#crearU .has-error .form-control-feedback {
+    color: #26a69a;}
+#crearU.has-success .control-label,
+#crearU.has-success .help-block,
+#crearU.has-success .form-control-feedback {
+    color: #26a69a;}
+
+/*#for{
+   font-family: "Bree-serif";
+  font-size: 40px;
+}*/
+/*body{
+    width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #f5f6f7;
+    height: 5000%
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;   
+    font-family: "Bree-serif";
+    font-size:10px;
+}*/
+/*nav{
+  background-color: #1792a4;
+  font-family: "Bree-serif";
+  font-size: 60px;
+}*/

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ExpoChick</title> 
+    <link rel="shorcut icon" href="../img/faviExpo.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/formValidation.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/sweetalert.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    
+    <Link href = "https://file.myfontastic.com/MJuXfjr2PdzPSEigictZvW/icons.css" rel = "stylesheet">
+    
+</head>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<body>
+    <header>
+        <a href="#" id="ocultar-aside"><i class="icon-bars"></i></a>
+        <a href="../indexespañol.html"><img src="../img/logo.png" width="60" height="50" class="logop"></a>
+        
+        
+    </header>
+
+
+    <main class="reg-fruta">
+        <div class="container">
+            <section>
+                <h2>
+                    <b> <center>Registro de Frutas</center> </b>
+                </h2>
+            </section>
+            <hr size="10" />    
+            <form id="crearU" method="post" class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-xs-5 control-label">Código</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="codigo_fruta" placeholder="ingrese su codigo unico"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-5 control-label">Nombre Producto</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="Nombre" placeholder="Nombre" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-5 control-label">Descripción</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="Descripcion" placeholder="Descripcion grafica" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-5 control-label">Cantidad</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="Cantidad" placeholder="Cantidad"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-5 control-label">Peso Neto</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="Peso_neto" placeholder="Peso Neto" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-5 control-label">Peso Bruto</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="Peso_bruto" placeholder="Peso Bruto" />
+                    </div>
+                </div>
+                <!-- <div class="form-group">
+                    <label class="col-xs-5 control-label">Importadora</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="Impotadora" placeholder="Importadora" />
+                    </div>
+                </div> -->
+                <div class="form-group">
+                    <label class="col-xs-5 control-label">Precio Unitario</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="precio"  placeholder="Precio" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-5 control-label">Observaciones</label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="observaciones" placeholder="Observaciones"/>
+                    </div>
+                </div>
+                <br>    
+                <div class="form-group">
+                    <div class="col-xs-5 col-xs-offset-5">
+                        <button type="submit" id="crear" class="btn btn-primary">Crear</button>
+                    </div>  
+                </div>
+           </form>
+        </div>
+    </main>
+
+    <aside>
+    <!--aquí va todo de la barra lateral-->
+        <div class="foto-perfil">
+            <img src="img/usuario_gerente.png" class="perfil" >
+        </div>
+        <!-- <div class="sesion">
+            <p><span class=""></span></p>
+        </div> -->
+        <div class="menu-aside">
+            <a href="gerente.html"><i class="fa fa-home"></i> Inicio </a>
+            <a href="img/error500.jpg"><i class="fa fa-plane"></i> Exportación <span class="arrow"></span>
+            <a href="gerente-registrarCliente.html"><i class="fa fa-users fa-lg"></i> Clientes <span class="arrow"></span></a>
+            <a href="gerente-registrarFruta.html"><i class="fa fa-car fa-lg"></i> Productos <span class="arrow"></span></a>
+            <a href="https://drive.google.com/open?id=0BzPzycZ3wohKVnFkNU54Tm5JUG8"><i class="fa fa-car fa-lg"></i> Documentación <span class="arrow"></span></a>
+            
+        </div>
+    </aside>
+ 
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#ocultar-aside').on('click', function(){
+                $('aside').toggleClass('aside, aside-toggle');
+                $('main').toggleClass('main, main-toggle');
+            });
+        });
+    </script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/formValidation.min.js"></script>
+        <script src="js/bootstrap_validation.min.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+        <!-- script formulario -->
+        <script>
+            $(document).ready(function() {
+                $('#crearU').formValidation({
+                    framework: 'bootstrap',
+                    icon: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        Nombre: {
+                            validators: {
+                                notEmpty: {
+                                    message:'¿Como es el Nombre de la Fruta?'
+                                },
+                                stringLength: {
+                                    min: 4,
+                                    max: 30
+                                            },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9]+$/
+                                }
+                            }
+                        },
+                        Cantidad: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Escriba la Cantidad'
+                                },
+                                stringLength: {
+                                    min: 6,
+                                    max: 30
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9]+$/
+                                    
+                                }
+                            }
+                        },
+                        codigo_fruta: {
+                            validators: {
+                                notEmpty: {
+                                    message:'El número no es valido'
+                                },
+                                regexp: {
+                                    message: 'El número no puede contener: Espacios,letras, -, (, ), + y .',
+                                    regexp: /^[0-9\s\-()+\.]+$/
+                                }
+                            }
+                        },
+                        Descripcion: {
+                            validators: {
+                                notEmpty: {
+                                    message:'La Descripcion es obligatorio'
+                                },
+                                regexp: {
+                                    message: 'Ingrese la Descripcion',
+                                    
+                                }
+                            }
+                        },
+                        Peso_neto: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Peso neto'
+                                },
+                                regexp: {
+                                    message: 'Ingrese el Peso neto',
+                                    
+                                }
+                            }
+                        },
+                        Peso_bruto: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Peso Bruto'
+                                },
+                                regexp: {
+                                    message: 'Ingrese el Peso Bruto',
+                                }
+                            }
+                        },
+                        Importadora: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Ingrese la Importadora'
+                                },
+                                regexp: {
+                                    message: 'Ingrese la Importadora'
+                                }
+                            }
+                        },
+                        precio: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Por favor ingrese el Precio'
+                                },
+
+                            }
+                        },
+                        Obcervaciones: {
+                            validators: {
+                                regexp: {
+                                    message:'Por favor elija una categoria'
+                                }
+                            }
+                        },
+                        Obcervaciones: {
+                            validators: {
+                                notEmpty: {
+                                    message:'El número no es valido'
+                                },
+                                regexp: {
+                                    message: 'El número no puede contener: Espacios,letras, -, (, ), + y .',
+                                    regexp: /^[0-9\s\-()+\.]+$/
+                                }
+                            }
+                        }
+
+                    }
+                });
+            });
+            
+        </script>
+        <script>
+            $().ready(function(){
+                $('#crear').click(function(){
+                    swal("Registrado", " Se ha realizado el registro con éxito.", "success")
+                    
+                });
+            });
+        </script>
+</body>
+</html>

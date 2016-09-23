@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px; 
+
+    background: #D0CBCB;
+    font-family: 'Bree Serif', serif;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+a {
+    text-decoration: none;
+        list-style: none;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgba(23,146,164,0.9);
+}
+header a {
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    width: 25px;
+    height: 40px;
+}
+#ocultar-aside{
+    color: white;
+    font-size: 20px;
+    
+}
+/*header a i {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    
+}
+header a i:before {
+    content: "";
+    position: relative;
+    top: 6px;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+header a i:after {
+    content: "";
+    position: relative;
+    top: 9px;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+}*/
+main {
+    width: 100%;
+    padding: auto;
+    padding-top: 80px;
+    margin-left: 250px;
+    transition: margin-left .5s;
+}
+aside {
+    width: 220px;
+    height: 100%;
+    margin-top: 50px;
+    left: 0;
+    position: fixed;
+    background: rgba(23,146,164,0.5);
+    transition: position, left .5s;
+}
+
+.main-toggle {
+    margin-left: 0;
+    transition: margin-left .5s;
+}
+.aside-toggle {
+    left: -250px;
+    transition: position, left .5s;
+}
+.logop{
+    right: 20px;
+    position: fixed;
+    background-color: transparent;
+}
+.foto-perfil {
+    width: 100%;
+    height: 170px;
+    position: relative;
+    border-bottom: 1px solid #1792a4;
+}
+.sesion{
+    border-bottom: 1px solid #1792a4;
+}
+.perfil {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 150px;
+    border-radius: 8%;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.5);
+}
+.menu-aside a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #1792a4;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu-aside a:hover {
+    background: rgba(0,0,0,.1);
+    color: black;
+}

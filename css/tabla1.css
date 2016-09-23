@@ -1,0 +1,14 @@
+
+#imagenFlotante {
+  bottom:10px;
+  right:0px;
+  position: fixed;
+}
+.botones{
+    float: left;
+}
+.derecha{
+    float: right;
+    margin-left: 10px;
+    margin-right: 20px;
+}

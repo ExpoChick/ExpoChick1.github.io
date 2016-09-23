@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Expochick</title>
+	<link rel="shorcut icon" href="../img/faviExpo.png">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/formValidation.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/sweetalert.css">
+ 	<script src="../js/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+<style>
+	*{ 
+		padding: 0px; 
+		margin: 0px;
+		border: 0  none;
+	} 
+	body{
+		background-image: url(../img/recuperar.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		/*width: 200px;*/
+		margin: 0 auto;
+		background-position: center;
+		background-attachment: fixed;
+	}
+	.recuperar{
+		background-color: rgba(255,255,255,0.7);
+		padding: 60px;
+		height: 520px;
+		position: relative;
+		text-align: center;
+	}	
+	.container{
+		padding-top: 40px;
+		padding-bottom: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	h1{
+		font-size: 4.5em;
+		text-align: center;
+		font-weight: bold;
+  		font-family: 'Josefin Sans', sans-serif;
+	}
+	span{
+		font-size: 2em;
+		text-align: center;
+  		font-family: 'Josefin Sans', sans-serif;
+	}
+	a{
+		text-decoration: none;
+  		list-style: none;
+	}
+	.correo{
+		font-size: 2em;
+		text-align: center;
+  		font-family: 'Josefin Sans', sans-serif;
+  		color: #157265;
+	}
+	input{
+		padding: 10px;
+	}
+
+</style>
+
+<main>
+	<div class="container">
+	    <div class="row col-md-12">
+	        <div class="col-md-6">
+	        	<div class="recuperar">
+	        		<h1>¿Olvidaste tu contraseña?</h1>
+					<span>Ingresa el correo electrónico aquí y te enviaremos instrucciones para restablecerla</span>
+	        		<form action="" name="recuperacion">
+	        			<div class="form-group" id="recuper">
+							<div class="col-xs-12">
+								<input type="email" class="correo form-control" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" name="email" id="correo" placeholder="Correo Electrónico" required/>
+							</div>
+						</div>
+							<br><br>
+						<div class="form-group">
+							<div class="col-md-6">
+								<button type="submit"  onclick="recuperar()" class="btn btn-primary">Recuperar</button>
+							</div>
+							<div class="col-md-6">
+	        					<a href="#"><button type="submit" class="btn btn-primary">Cancelar</button></a>	
+								
+							</div>
+						</div>
+	        		</form>
+					<a data-toggle="modal" href="../index.html"><button class="btn btn-success"><li>Cancelar</li></button></a>
+					
+	        	</div>
+	        </div>
+	        <div class="col-md-6">
+				<div class="col-md-12">
+					<img src="../img/tarjeta.png" alt="" height="40%">
+				</div>
+	        </div>
+	    </div>
+	</div>
+</main>
+
+<!-- Modal Ingresar -->
+	<div class="modal fade" id="myModal" role="dialog">
+    	<div class="modal-dialog">
+
+    		<div class="modal-content">
+				<div class="modal-header">
+					<button type="button button-close"  class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Iniciar Sesión</h4>
+				</div>
+
+				<form id="inicioSesion" name="formclave" method="post" class="form-horizontal">
+					<div class="form-group">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<input type="text" class="form-control" name="usuario" placeholder="Nombre de Usuario" id="nombre" required  />
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<input type="password" class="form-control" name="clave" placeholder="Contraseña" id="clave" required />
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<a href="">¿Olvido su Contraseña?</a>
+							<!-- <a data-toggle="modal" data-target="#forgotPasswordModal">¿Olvido su Contraseña?</a> -->
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<button type="button"  id="iniciarsesion" value="Iniciar sesion" onclick="acceso()" class="btn btn-success">Iniciar sesión</button>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</form>
+
+	<!-- <script>
+	function acceso(){ 
+		var nombre=document.formclave.usuario.value;
+		var clave=document.formclave.clave.value;
+
+		if (nombre=="" || clave==""){
+
+						swal("","Ingrese los datos","error");
+				}else{
+					 
+					 if (nombre=="logistica" && clave=="expochick") {
+							window.location = "html/Gerente-Logistica/logistica.html" 
+					   	}else{ 
+
+					   		 if (nombre=="cliente" && clave=="expochick") {
+					   		window.location = "html/Cliente/cliente.html"
+
+					   		}else{
+					   			
+					   		   	 if (nombre=="distri123" && clave=="expochick") {
+					   				window.location = "html/Produccion/#"
+
+					   			}else{
+
+					   					swal("", "Nombre de usuario o contraseña no validos", "error");
+					   				}
+					   			}
+					   		}
+					   	}
+					}
+	
+	</script> -->
+	<script>
+	function recuperar(){
+		var correo=document.recuperacion.email.value;
+		if (true) {
+		swal("Enviado!", "Por favor revisa tu correo electrónico, para restaurar tu contraseña.", "success");
+		}else{
+			swal("Error!", "ingrese la dirección de correo", "error");
+		}
+	}
+	</script>
+			</div>
+		</div>
+	</div>
+
+<script src="../js/bootstrap.min.js"></script>
+<script scr="../js/jquery-2.2.3.min.js" ></script>
+<script src="../js/sweetalert.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<title>ExpoChick</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+ 	<link rel="shorcut icon" href="img/faviExpo.png">
+
+	<link rel="stylesheet" href="css/sweetalert.css">
+ 	<script src="js/sweetalert.min.js"></script>
+	
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'> -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	
+
+</head>
+<body class="fake"> 
+	<header id="nav">
+		<img src="img/banner.png" class="img4" alt="" >
+		<nav id="navbar" class="navbar navbar-default navbar-fixed-top text-center">
+			<a href="#nav"><li>Home</li></a>
+			<a href="#nosotros"><li>Company</li></a>
+			<a href="#productos"><li>Products</li></a>	
+			<a target="_blank" href="http://www.freshplaza.com/index.asp"><li>News</li></a>
+			<a href="#contacto"><li>Contact</li></a>
+			<a data-toggle="modal" href="#myModal"><li>Log In</li></a>
+		</nav>
+		<div class="container inicio">
+			<div class="row texth">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 info1">
+					<h3>In order to convert the world of fruit and food derived an inexhaustible source of daily energy, respecting the environment and providing a friendly environment with nature, and the health of mankind.</h3>
+				</div>
+				<div class="col-md-4 info2">
+					<p>Agribusiness> Agricola</p>
+					<img src="img/agricola.png" alt="">
+					<p>News</p>
+					<a target="_blank" href="http://www.freshplaza.com/index.asp"><img src="img/news.png" alt=""></a>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</header>
+	<section id="nosotros"	>
+		<br><br><br><br><br>
+		<div class="container fon1">
+			<h1>Company</h1><br>	
+			<div class="row">
+			<div class="col-md-1"></div>
+				<div class="col-md-7">
+					<h2><b>Quality exotic fruit direct from colombian farmers.</b><br><br>
+					Is a leading colombian company that offers a comprehensive range of fruits including Physalis.<br>
+					Our company us located in Bogota, southamerica. Focused on quality service and safe goods and competitive price.<br>We are specialized in fruitgrowing and we use the lastest techniques in production. We are applying the GLOBAL GAP protocolo giving fruits of first quality for the benefit of our customers.<br>We are specialized in fruitgrowing and we use the lastest techniques in production. We are applying the GLOBAL GAP protocolo giving fruits of first quality for the benefit of our customers.<br><b>Frutireyes</b> can supply you with exotic fruits responding to the most demanding qualitative standards </h2>
+					<br><br><br>
+				</div>
+				<div class="col-md-4">
+					<img src="img/fruta1ing.png" align="center" >
+				</div>
+				<br><br><br>
+			</div>
+		</div>
+	</section>
+	<section id="productos">
+	<br><br>
+		<div id="fh5co-featured-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="#productos" class="featured-grid" style="background-image: url(img/manzana.jpg);">
+						<div class="desc">
+							<h3>Apple</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="#productos" class="featured-grid featured-grid-2" style="background-image: url(img/Pera.jpg);">
+						<div class="desc">
+							<h3>Pear</h3>
+						</div>
+					</a>
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#productos" class="featured-grid featured-grid-2" style="background-image: url(img/Granadilla.jpg);">
+								<div class="desc">
+									<h3>Passion Fruit</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a href="#productos" class="featured-grid featured-grid-2" style="background-image: url(img/Durazno.jpg);">
+								<div class="desc">
+									<h3>Peach</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section id="contacto">
+			<br><br>
+		<div class="container fon1">
+			<br><h1><b>Contact</b></h1>
+			<img src="img/contactoing.png" class="text-center">
+			<br><br><br>
+	    </div>
+	    <br>
+    </section>
+	
+	<!-- Modal Ingresar -->
+	<div class="modal fade" id="myModal" role="dialog">
+    	<div class="modal-dialog">
+
+    		<div class="modal-content">
+				<div class="modal-header">
+					<button type="button button-close"  class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Log In</h4>
+				</div>
+
+				<form id="inicioSesion" name="formclave" method="post" class="form-horizontal">
+					<div class="form-group">
+						<div class="col-md-2"></div>
+						<!-- <label class="col-md-3 control-label">Nombre de Usuario</label> -->
+						<div class="col-md-8">
+							<input type="text" class="form-control" name="usuario" placeholder="Username" id="nombre" required  />
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-md-2"></div>
+						<!-- <label class="col-md-3 control-label">Contraseña</label> -->
+						<div class="col-md-8">
+							<input type="password" class="form-control" name="clave" placeholder="Password" id="clave" required />
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<a href="html/recuperarcontraseñaEn.html">Forgot Password?</a>
+							<!-- <a data-toggle="modal" data-target="#forgotPasswordModal">Forgot Password?</a> -->
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<button type="button"  id="iniciarsesion" value="Iniciar sesion" onclick="acceso()" class="btn btn-success">Log In</button>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</form>
+
+	<script>
+	function acceso(){ 
+		var nombre=document.formclave.usuario.value;
+		var clave=document.formclave.clave.value;
+
+		if (nombre=="" || clave==""){
+
+						swal("","Enter the data","error");
+				}else{
+					 
+					 if (nombre=="logistica" && clave=="expochick") {
+							window.location = "html/Gerente-Logistica/logistica.html" 
+					   	}else{ 
+
+					   		 if (nombre=="cliente" && clave=="expochick") {
+					   		window.location = "html/Cliente/cliente.html"
+
+					   		}else{
+					   			
+					   		   	 if (nombre=="distri123" && clave=="expochick") {
+					   				window.location = "html/Produccion/#"
+
+					   			}else{
+
+					   					swal("", "Invalid username/password", "error");
+					   				}
+					   			}
+					   		}
+					   	}
+					}
+	
+	</script>
+	<!-- <form action="">
+		<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h5 class="modal-title">¿Olvido su contraseña?</h5>
+					</div>
+
+					<div class="modal-body">	
+						<div class="form-group">
+							<label class="col-xs-3 control-label">Correo Electrónico</label>
+							<div class="col-xs-6">
+								<input type="text" class="form-control" name="email" placeholder="Correo Electrónico" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-5 col-xs-offset-3">
+								<button type="submit" class="btn btn-primary">Recuperar</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+	</form> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- Plugin para dar mas efecto a nuestro scroll -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<!-- Importamos nuestro script -->
+<!-- 	<script src="js/script.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/formValidation.min.js"></script>
+	<script src="js/bootstrap_validation.min.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+	<script scr="js/jquery-2.2.3.min.js" ></script>
+	
+
+
+	
+
+
+</body>
+</html>
+			</div>
+		</div>
+	</div>

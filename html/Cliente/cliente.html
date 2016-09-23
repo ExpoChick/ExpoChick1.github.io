@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="i
+    nitial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ExpoChick</title> 
+    <link rel="shorcut icon" href="../../img/faviExpo.png">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/formValidation.min.css">
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/usercliente.css">
+    <!-- <link rel="stylesheet" href="../../css/registro.css"> -->
+    
+    <link rel="stylesheet" href="../../css/sweetalert.css">
+    <script src="../../js/sweetalert.min.js"></script>
+
+</head>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<body>
+
+
+
+    <header>
+        <a href="#" id="ocultar-aside"><i></i></a>
+        <a href="../../index.html"><img src="../../img/logo.png" width="60" height="50" class="logop"></a>
+    </header>
+
+    <main class="cliente">
+    <div class="col-md-12">
+        
+        <div class="fh5co-gallery">
+            <a class="gallery-item" href="#">
+                <img src="../../img/manzana.jpg" alt="">
+                <span class="overlay">
+                    <h2>Manzana</h2>
+                </span>
+            </a>
+            <a class="gallery-item" href="#">
+                <img src="../../img/Granadilla.jpg" alt="">
+                <span class="overlay">
+                    <h2>Granadilla</h2>
+                </span>
+            </a>
+            <a class="gallery-item" href="#">
+                <img src="../../img/Pera.jpg" alt="">
+                <span class="overlay">
+                    <h2>Pera</h2>
+                </span>
+            </a>
+            <br>
+            <a class="gallery-item" href="#">
+                <img src="../../img/Durazno.jpg" alt="">
+                <span class="overlay">
+                    <h2>Durazno</h2>
+                </span>
+            </a>
+            <a class="gallery-item" href="#">
+                <img src="../../img/zapote.png" alt="">
+                <span class="overlay">
+                    <h2>Zapote</h2>
+                </span>
+            </a>
+            <a class="gallery-item" href="#">
+                <img src="../../img/banana.jpg" alt="">
+                <span class="overlay">
+                    <h2>Banano</h2>
+                </span>
+            </a>
+            <a class="gallery-item" href="#">
+                <img src="../../img/yuca.jpg" alt="">
+                <span class="overlay">
+                    <h2>Yuca</h2>
+                </span>
+            </a>
+            <a class="gallery-item" href="#">
+                <img src="../../img/limon.jpg" alt="">
+                <span class="overlay">
+                    <h2>Limon</h2>
+                </span>
+            </a>
+            <a class="gallery-item" href="#">
+                <img src="../../img/champiñon.jpg" alt="">
+                <span class="overlay">
+                    <h2>Champiñones</h2>
+                </span>
+            </a>
+        </div>
+    </div>
+        
+        
+        
+    </main>
+    <aside>
+          <div class="foto-perfil">
+            <img src="../../img/usuario_cliente.png" class="perfil" >
+        </div>
+    
+        <div class="menu-aside">
+            <a href="#"><i></i> Inicio </a>
+            <a href="cliente-catalogo.html"><i></i> Catálogo <span class="arrow"></span>
+            <a href="reportes.html"><i></i> Reportes <span class="arrow"></span></a>
+            
+        </div>
+        
+    </aside>
+ 
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#ocultar-aside').on('click', function(){
+                $('aside').toggleClass('aside, aside-toggle');
+                $('main').toggleClass('main, main-toggle');
+            });
+        });
+    </script>
+    <script>
+        swal({   title: "Bienvenid@!",   text: "",   imageUrl: "../../img/faviExpo.png" });
+    </script>
+ 
+</body>
+</html>

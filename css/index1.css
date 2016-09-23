@@ -1,0 +1,174 @@
+*{ 
+	padding: 0px;
+	margin: 0px;
+	border: 0  none;
+	/*background-color: #1792a4;*/
+/*	background-color: black;*/
+} 
+/*header img{
+	height: 100%;  
+	width: 100%;
+  background-image: url(../img/banner.png);
+}*/
+
+
+#navbar{
+  background-color: rgba(23,146,164,0.9);
+}
+#navbar li {
+  padding: 10px;
+  display: inline-block;
+	background-color: transparent;
+}
+#navbar a{
+  font-size: 24px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+#navbar a li:hover{
+  color: black;
+}
+
+section{
+  /*padding: 10px;*/
+  /*width: 100%;*/
+
+  /*espacio entre los section*/
+}
+section > .container{
+	box-shadow: 5px 5px rgba(203,233,210,0.9);
+  background-color: rgba(23,146,164,0.4);
+/*  width: 100%;
+  height: 600px;*/
+	padding-right: 20px;
+  padding-left: 20px;
+	padding-top: 20px;
+  padding-bottom: 20px;
+}
+#nosotros h2{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+#contacto img{
+	text-align: center;
+	padding-left: 14%;
+}
+#productos h4{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5em;
+}
+#productos img{
+	border-radius: 15px;
+	width: 370px;
+	height: 220px;
+}
+
+section h1{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px;
+}
+
+header .col-md-4{
+  padding:40px;
+  text-align: center;
+}
+.texth p{
+  font-size: 1.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: #01260A;
+}
+.texth h3{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: #01260A;
+}
+
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+#fase4 >.container >.fa{font-size:24px;margin-right:5px}
+.row-first{margin-bottom:10px;margin-top:8px}
+.title-contact{margin-top:32px;display:none;font-family: 'Poiret One', cursive; font-size: 5em;}
+.contact-email { display:none; }
+.container a{transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease}
+.quick-contact{color:#fff;background-color:#000;background-image:url(../img/papel-tapiz-azul-textura-tejido-textil-alfombras-x-imagen-picture-321583.jpg);text-align: center;}
+.contact a{-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px;display:block;background-color:rgba(255,255,255,0.25);font-size:20px;text-align:center;color:#fff;padding:7px}
+.contact a:hover{background-color:rgba(255,255,255,0.85);text-decoration:none}
+.contact a.skype:hover,.fa-skype{color:#00aff0}
+.contact a.google:hover,.fa-google-plus{color:#dd4b39}
+.contact a.linkedin:hover,.fa-linkedin{color:#0e76a8}
+.contact a.twitter:hover,.fa-twitter{color:#00acee}
+.contact h1{
+	font-size: 10px;
+}
+#inicioSesion .has-error .control-label,
+#inicioSesion .has-error .help-block,
+#inicioSesion .has-error .form-control-feedback {
+    color: #FF0000;
+}
+
+#inicioSesion .has-success .control-label,
+#inicioSesion .has-success .help-block,
+#inicioSesion .has-success .form-control-feedback {
+    color: #26a69a;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.modal{
+    background-color: rgba(0,253,243,0.3);
+    font-family: 'Josefin Sans', sans-serif;
+}

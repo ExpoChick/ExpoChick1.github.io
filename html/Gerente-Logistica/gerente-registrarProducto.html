@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ExpoChick</title>
+    <link rel="shorcut icon" href="../../img/faviExpo.png">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/user.css">
+    <link rel="stylesheet" href="../../css/registro.css">
+    <!-- <link rel="stylesheet" href="../../css/stilografito.css"> -->
+    <link rel="stylesheet" href="../../css/export.css">
+    <link rel="stylesheet" href="../../css/formValidation.min.css">
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/sweetalert.css">
+
+    <Link href = "https://file.myfontastic.com/MJuXfjr2PdzPSEigictZvW/icons.css" rel = "stylesheet">
+    
+</head>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> -->
+<body>
+    <header>
+        <a href="#" id="ocultar-aside"><i class="icon-bars"></i></a>
+        <a href="../../index.html"><img src="../../img/logo.png" width="60" height="50" class="logop"></a>
+        
+        
+    </header>
+    <main class="intro">
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb">
+					<li>
+						<a href="logistica.html">Inicio</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="gerente-tablaclientes.html">Productos</a> <span class="divider">/</span>
+					</li>
+					<li class="active"> Registrar Producto
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+    <style>
+        #crearU .has-error .control-label,
+        #crearU .has-error .help-block,
+        #crearU .has-error .form-control-feedback {
+            color: #26a69a;}
+        #crearU.has-success .control-label,
+        #crearU.has-success .help-block,
+        #crearU.has-success .form-control-feedback {
+            color: #26a69a;}
+    </style>
+    <div class="Formulario">
+        <h2>
+            <b> <center>Registrar Producto</center> </b>
+        </h2>
+        <hr size="10" />  
+        <div class="col-md-10">
+            <div class="col-md-6">
+                <br>    
+                <form id="crearU" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Nombre Producto</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" name="Nombre" placeholder="Nombre Producto" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Peso Por</label>
+                        <div class="col-md-5">
+                            <input type="number" class="form-control" name="peso por" placeholder="Peso por Kilogramos" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Categoría</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" name="sigla" placeholder="Categoría 1 ó 2" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Calibre</label>
+                        <div class="col-md-5">
+                            <input type="number" class="form-control" name="calibre" placeholder="Tipos de Calibres" required max="2" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Precio Unitario</label>
+                        <div class="col-md-5">
+                            <input type="number" class="form-control" name="precio" placeholder="Precio Unitario" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Descripción</label>
+                        <div class="col-md-8">
+                            <!-- <input type="text" class="form-control" name="descripcion" placeholder="País" required /> -->
+                            <textarea name="descripcionp" id="descripcionp" cols="35" rows="10" placeholder="Descripción del Producto" max="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-7"></div>
+                    <div class="form-group col-md-5">
+                        <button class="btn btn-success"> Guardar </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-hover table-condensed table-bordered">    
+                    <thead bgcolor="#7FF5C4" >
+                        <tr>
+                            <th colspan="3" class="align-center">
+                                <h4>Factores de Nutrición</h4>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            Compuesto
+                        </td>
+                        <td>
+                            Unidad
+                        </td>
+                        <td>
+                            Total
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+            
+
+        <script src="../../js/jquery-2.2.3.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/formValidation.min.js"></script>
+        <script src="../../js/bootstrap_validation.min.js"></script>
+        <script src="../../js/sweetalert.min.js"></script>
+        <!-- <script>
+            $(document).ready(function() {
+                $('#crearU').formValidation({
+                    framework: 'bootstrap',
+                    icon: {
+                        valid: 'icon-star',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        Nombre: {
+                            validators: {
+                                notEmpty: {
+                                    message:'¿Como es el Nombrel Cliente?'
+                                },
+                                stringLength: {
+                                    min: 3,
+                                    max: 30
+                                            },
+                                regexp: {
+                                    regexp: /^[a-zA-Z]+$/
+                                }
+                            }
+                        },
+                        sigla: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Sigla del Cliente'
+                                },
+                                stringLength: {
+                                    min: 6,
+                                    max: 30
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z]+$/
+                                }
+                            }
+                        },
+                        direccion: {
+                            validators: {
+                                notEmpty: {
+                                    message:'El número no es valido'
+                                },
+                                stringLength: {
+                                    min: 4,
+                                    max: 30
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9]+$/
+                                }
+                            }
+                        },
+                        pais: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Nombre del Pais'
+                                },
+                                regexp: {
+                                    message: 'Nombre del Pais',
+                                    regexp: /^[a-zA-Z]+$/
+                                }
+                            }
+                        },
+                        codigo: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Codigo Postal'
+                                },
+                                regexp: {
+                                    message: 'Ingrese el Codigo Postal',
+                                    regexp: /^[0-9]+$/
+                                }
+                            }
+                        },
+                        telefono: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Telefono de la Empresa'
+                                },
+                                regexp: {
+                                    message: 'Telefono de la Empresa',
+                                    regexp: /^[0-9]+$/
+                                }
+                            }
+                        },
+                        empresa: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Nombre de la Empresa'
+                                },
+                                regexp: {
+                                    message: 'Nombre de la Empresa'
+                                }
+                            }
+                        },
+                        ocupacion: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Ocupacion del Contacto'
+                                },
+                                regexp: {
+                                    message: 'Ocupacion del Contacto',
+                                    regexp: /^[a-zA-Z]+$/
+                                }
+                            }
+                        },
+                        email: {
+                            validators: {
+                                notEmpty: {
+                                    message:'Email del Contacto'
+                                },
+                                stringLength: {
+                                    min: 3,
+                                    max: 30
+                                            },
+                                regexp: {
+                                    regexp: /^[a-zA-Z@.]+$/
+                                }
+                            }
+                        },
+                        
+                    }
+                });
+            });
+    </script> -->    
+            <!-- <script>
+            $().ready(function(){
+                $('#crearU').click(function(){
+                    swal("Registrado", " Se ha realizado el registro con exito.", "success")
+                    
+                });
+            });
+        </script>  -->
+    </main>
+    <aside>
+    <!--aquí va todo de la barra lateral-->
+        <div class="foto-perfil">
+            <img src="../../img/usuario_gerente.png" class="perfil" >
+        </div>
+        <!-- <div class="sesion">
+            <br>
+            <a href=""><span class="glyphicon glyphicon-align-justify"></span></a>
+        </div> -->
+        <div class="menu-aside">
+            <a href="logistica.html"><i></i> Inicio </a>
+            <a href="#"><i></i> Exportación <span class="arrow"></span>
+            <a href="gerente-tablaclientes.html"><i></i> Clientes <span class="arrow"></span></a>
+            <a href="gerente-productos.html"><i></i> Productos <span class="arrow"></span></a>
+            <!-- <a href="https://drive.google.com/open?id=0BzPzycZ3wohKVnFkNU54Tm5JUG8"><i class="fa fa-car fa-lg"></i> Documentación <span class="arrow"></span></a> -->
+            
+        </div>
+    </aside>
+
+ 
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#ocultar-aside').on('click', function(){
+                $('aside').toggleClass('aside, aside-toggle');
+                $('main').toggleClass('main, main-toggle');
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
